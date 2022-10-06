@@ -15,6 +15,7 @@ public class Palindrome {
         }
         return a;
     }
+
     public static boolean isPalindrome(String s){
         return s.equals(reverseString(s));
     }
