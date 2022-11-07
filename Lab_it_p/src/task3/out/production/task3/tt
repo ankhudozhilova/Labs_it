@@ -1,0 +1,28 @@
+Set<Integer> set = new HashSet<Integer>();
+        for (int e : arr)
+            set.add(e);
+        return set.size();
+
+Map<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+        for(int i = 0; i < arr.length; i++) {
+            if (ht.get(arr[i]) == null)
+                ht.put(arr[i], 1);
+            else
+                ht.put(arr[i], ht.get(arr[i]) + 1);
+        }
+        return ht.size();
+if(n == 0 || n == 1) return true;
+        if(n < 0) return false;
+        int nn = n*n;
+        int len = String.valueOf(nn).length();
+
+        if(len % 2 == 0){
+            int l = nn / (int)Math.pow(10, len/2);
+            int r = nn % (int)Math.pow(10, len/2);
+            return r + l == n;
+        }
+        else {
+            int l = nn / (int)Math.pow(10, len/2+1);
+            int r = nn % (int)Math.pow(10, len/2+1);
+            return r + l == n;
+s.charAt(s.length() - 1) + s.substring(1, s.length() - 1) + s.charAt(0);
